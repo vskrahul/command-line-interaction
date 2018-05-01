@@ -15,7 +15,7 @@ public class Test {
 		commandsEvents.add(""); commands.add("connect");
 		
 		CmdExecutor cmd = new CmdExecutor(repo, commandsEvents, commands
-						, "D:\\project\\Zodiac\\mototerm.exe", "30.128.98.144");
+						, "D:\\project\\Zodiac\\mototerm.exe", "30.212.8.143");
 		cmd.process();
 	}
 }
