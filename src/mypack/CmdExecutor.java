@@ -37,6 +37,8 @@ public class CmdExecutor {
 	
 	private int currentCommandIndex = 0;
 	
+	private Repository repository;
+	
 	/**
 	 * Instance of {@link CmdExecutor}
 	 * 
@@ -47,7 +49,9 @@ public class CmdExecutor {
 	 * @param args - arguments used to start execution
 	 * @throws IOException IO Error
 	 */
-	public CmdExecutor(List<String> commandsEvents, List<String> commands, String... args) throws IOException {
+	public CmdExecutor(Repository repository, List<String> commandsEvents, List<String> commands, String... args) throws IOException {
+		
+		this.repository = repository;
 		
 		this.commands = commands;
 		this.commandsEvents = commandsEvents;
@@ -79,7 +83,7 @@ public class CmdExecutor {
 				Thread.sleep(500);
 				while (oldLine != null) {
 					oldLine = reader.readLine();
-					System.out.println("Stdout: " + oldLine);
+					this.repository.write(oldLine);
 				}
 				
 			} finally {
