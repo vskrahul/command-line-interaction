@@ -1,4 +1,4 @@
-package mypack;
+package com.apcoe.mototerm;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package mypack;
+package com.apcoe.mototerm;
 
 /**
  * Repository interface containing write method to persist the logs in impemented repository.

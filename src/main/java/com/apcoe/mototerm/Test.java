@@ -1,4 +1,4 @@
-package mypack;
+package com.apcoe.mototerm;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ public class Test {
 
 	public static void main(String[] args) throws Exception {
 		
-		Repository repo = new ConsoleRepository();
+		Repository repo = new LoggerRepository();
 		
 		List<String> commands = new ArrayList<>();
 		List<String> commandsEvents = new ArrayList<>();

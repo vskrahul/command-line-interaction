@@ -1,7 +1,7 @@
 /**
  * 
  */
-package mypack;
+package com.apcoe.mototerm;
 
 /**
  * @author Rahul Vishvakarma
